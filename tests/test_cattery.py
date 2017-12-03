@@ -7,7 +7,7 @@ from catinabox import cattery
 # add_cats
 ###########################################################################
 
-@pytest.fixture
+@pytest.fixture(scope='function')
 def cattery_client():
     test_cattery = cattery.Cattery()
     return test_cattery
